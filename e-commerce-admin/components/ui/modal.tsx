@@ -3,9 +3,9 @@
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
+    DialogDescription,
   } from "@/components/ui/dialog"
   
 interface ModalProps {
@@ -23,7 +23,7 @@ export const Modal: React.FC<ModalProps> = ({
     onClose,
     children
  }) => {
-    const onChange = (open: boolean) =>{
+    const onChange = (open: boolean) => {
         if (!open) {
             onClose();
         }
@@ -41,5 +41,5 @@ export const Modal: React.FC<ModalProps> = ({
                 </div>
             </DialogContent>
         </Dialog>
-    )
- }
+    );
+ };
